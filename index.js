@@ -5,7 +5,7 @@ const { API_VERSION, IP_SERVER, PORT_DB } = require('./config');
 
 //mongoose.set("userFindAndModify", false);
 
-mongoose.connect(`mongodb://${IP_SERVER}:${PORT_DB}/veterinaria_v2`,
+mongoose.connect(`mongodb+srv://admin:<password>@veterinaria.xxip0.mongodb.net/myFirstDatabase?retryWrites=true&w=majority`,
 {useNewUrlParser: true, useUnifiedTopology: true },(err,res) => {
     if(err){
         throw err;
